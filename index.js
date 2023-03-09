@@ -77,3 +77,14 @@ function valTimesIndex(array) {
 };
 
 console.log(valTimesIndex([1, 2, 3]));
+
+
+function valTimesIndex2(array) {
+	return array.map(function (value, index) {
+		let result = value * index;
+		return result;
+	});
+};
+
+let multipleIndex = valTimesIndex2([1, 1, 1]);
+console.log(multipleIndex);
